@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f5f5f5"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f73938"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/home"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:text="快递查询"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/thumb"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/ll_style"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:background="@drawable/rl_style"
+            >
+
+            <ImageButton
+                android:id="@+id/imgbtn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:background="@mipmap/add"
+                />
+
+            <EditText
+                android:id="@+id/et_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/imgbtn_add"
+                android:background="#00000000"
+                android:hint="备注物品名称"
+                android:textColor="#333333"
+                android:textColorHint="#ffffff"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:id="@+id/del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:background="@mipmap/del_white"
+                android:visibility="invisible"
+
+                />
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_marginRight="17dp"
+                android:layout_centerVertical="true"
+                android:text="非必填"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="66dp"
+            >
+
+            <ImageButton
+                android:id="@+id/imgbtn_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:background="@mipmap/code"
+                />
+
+            <EditText
+                android:id="@+id/et_num"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgbtn_code"
+                android:background="#00000000"
+                android:hint="请输入单号"
+                android:lines="1"
+                android:textColor="#333333"
+                android:textColorHint="#bbbbbb"
+                android:textSize="14sp"/>
+            <ImageButton
+                android:id="@+id/delete_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/gray_delete"
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:id="@+id/scanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:background="@mipmap/camera"
+
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#b5b5b5"
+            >
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/choose"
+            android:layout_width="320dp"
+            android:layout_height="66dp">
+
+            <ImageButton
+                android:id="@+id/imgbtn_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:background="@mipmap/car"/>
+
+            <TextView
+                android:id="@+id/et_name"
+                android:layout_width="230dp"
+                android:layout_height="66dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/imgbtn_car"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="请选择快递公司"
+                android:textColor="#333333"
+                android:textColorHint="#bbbbbb"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:id="@+id/delete_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/gray_delete"
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:background="@mipmap/select"
+
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#b5b5b5"
+            ></LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/button_style"
+        android:onClick="query"
+        android:text="查询"
+        android:textSize="14sp"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
